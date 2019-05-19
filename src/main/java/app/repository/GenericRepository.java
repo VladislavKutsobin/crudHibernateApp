@@ -6,6 +6,6 @@ public interface GenericRepository<T, ID> {
     void create(T t);
     List<T> findAll();
     void update(T t);
-    void delete(T t);
+    void delete(ID id);
     T getById(ID id);
 }
